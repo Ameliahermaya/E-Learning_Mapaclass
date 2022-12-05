@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    
+    <p></p>
+    <center><img src="../static/img/Eksponen.png" alt="Logo Untirta" width="1200px"></center>
+    <p></p>
+    <h4>Materi</h4>
+    <p style="font-family: 'times new roman'">Eksponen merupakan suatu simbol atau angka yang menunjukkan seberapa banyak suatu angka yang dikalikan.</p>
+
+    <center><img src="https://www.zenius.net/blog/wp-content/uploads/2022/04/Ilustrasi-Persamaan-Eksponen.png" alt="Eksponen" width="500px"></center>
+    <p style="font-family: 'times new roman'">Dari situ, kita bisa lihat kalau eksponen merupakan perkalian berulang sebanyak pangkatnya. Dalam hal ini, seberapa banyak simbol atau angka dikalikan, disebut sebagai pangkat. Sementara itu, angka yang dikalikan disebut sebagai basis.</p>
+    <p>
+    <p style="font-family: 'times new roman'">Contoh soal : Bentuk 34 dapat dinyatakan sebagai ….
+        jawab : Ingat bahwa bentuk an= a x a x a x … x a (sebanyak n kali). Hal ini membuat 34 = 3 x 3 x 3 x 3.
+        <center><img src="../static/img/me1.jpeg" alt="Eksponen" width="500px"></center>
+
+    <p>Contoh Soal Eksponen Kelas 10</p>
+    <p>1. Akar-akar persaman eksponen (32 pangkat x) – (12 pangkat 3x) +1 + 91 = 0 adalah x1 dan x2. Jika x1 > x2, maka nilai x1 – x2 =….</p>
+    <p>Penyelesaian:</p>
+    <p>Misal (3 pangkat x) = p maka persamaannya adalah sebagai berikut.
+            
+        (p pangkat 2) – 30p + 91 = 0
+        
+        (p – 3)
+        
+        (p – 27)
+        
+        P = 3
+        
+        P = 27
+        
+        3x = 3 pangkat 1
+        
+        3x = 3 pangkat 3
+        
+        X = 1
+        
+        X = 3
+        
+        X1 – X2
+        
+        3 – 1 = 2</p>
+
+        {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+    <P></P>
+    <center>
+        <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    </center>
+    
+    <p></p> 
+
+{% endblock %}

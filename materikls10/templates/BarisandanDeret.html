@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    
+    <p></p>
+    <center><img src="../static/img/BarisandanDeret.png" alt="Logo Untirta" width="1200px"></center>
+    <p></p>
+    
+    <h4>Materi</h4>
+    <p style="font-family: 'times new roman'">Barisan aritmatika merupakan bilangan dengan pola yang tetap berdasarkan operasi penjumlahan dan pengurangan. Selisih antara dua suku berurutan pada barisan aritmatika disebut jumlah beda yang dilambangkan dengan B. Rumus untuk menentukan beda pada barisan aritmatika adalah sebagai berikut : </p>
+    <p style="font-family: 'times new roman'">Barisan aritmatika adalah suatu barisan yang suku-sukunya diperoleh dengan cara menjumlahkan suatu konstanta pada suku sebelumnya. konstanta tersebut  disebut dengan beda.
+        suku-suku pada barisan dinyatakan dengan Un dan untuk suku pertama dinyatakan dengan U₁ atau a.
+    <p>Contoh 1</p>
+    <p>Seorang karyawan toko mendapat gaji pertama sebesar Rp 1.200.000 Setiap bulan Ia mendapat kenaikan gaji sebesar Rp 25.000 Berapakah jumlah pendapatan yang diterima karyawan toko tersebut dalam waktu 1 tahun?
+        Penyelesaian</p>
+    <p>Diketahui</p>
+        a=1.200.000 [ Besaran gaji awal]
+        b=25.000 [kenaikan tiap bulan yang diperoleh]
+        n= 12 (dalam 1 tahun ada 12 bulan)
+        Ditanya: berapa jumlah pendapatan yang diterima (S₁₂) ?
+    <p></p>
+    <p>Jawab:</p>
+        S₁₂=n/2 {2a+(n-1)b} 
+        =12/2 {2(1.200.000)+(12-1)25.000} 
+        =6{2.400.000+11(25.000) } 
+        =6{2.400.000+275.000} 
+        =6(2.675.000) 
+        =16.050.000 
+        Jadi, pendapatan karyawan toko dalam waktu 1 tahun sebesar Rp 16.050.000</p>
+    <p style="font-family: 'times new roman'">Keterangan : 
+        b : Beda
+        Un  : Suku ke-n
+        Un+1 : Suku sebelum ke-n
+        n : Banyaknya suku
+         Berbeda dengan barisan dan deret, deret aritmatika merupakan hasil penjumlahan dari barisan.
+        
+        Namun, tidak selalu menjumlahkan keseluruhan suku dalam satu barisan.
+        
+        Rumus deret hanya menjumlahkan barisan aritmatika hanya sampai suku yang diperintahkannya saja.
+        
+        Contoh Deret Aritmatika 
+        3 + 5 + 7 + 9 + 11 + 13
+        3 – 20 – 17 – 14 – 11 – 8</p>
+    <p>
+        <center><img src="../static/img/mbd1.jpeg" alt="Barisan dan Deret" width="500px">
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+    <P></P>
+    <center>
+        <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    </center>
+    
+    <p></p> 
+
+{% endblock %}

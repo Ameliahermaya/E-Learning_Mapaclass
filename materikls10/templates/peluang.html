@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <p></p>
+    <center><img src="../static/img/Peluang.png" alt="Logo Peluang" width="1200px" ></center>
+    <p></p>
+    
+    <h4>Materi</h4>
+    <p style="font-family: 'times new roman'">Peluang pada umumnya berarti kesempatan, namun pada matematika, peluang atau probabilitas adalah kemungkinan yang mungkin terjadi/muncul dari suatu peristiwa. Dalam angka, peluang selalu berkisar antara 0 sampai dengan 1. Dimana 0 menyatakan sebuah kejadian yang tidak mungkin terjadi dan 1 menyatakan sebuah kejadian yang pasti terjadi dengan P(K) menyatakan peluang terjadinya kejadian K.</p>
+    <p style="font-family: 'times new roman'">Rumus Peluang Matematika
+        Percobaan melempar mata uang logam hasilnya adalah G atau A. Apabila percobaan dilempar 10 kali dan muncul G 4 kali maka frekuensi relatif munculnya G adalah 4/10. Jika percobaan dilakukan 10 kali lagi dan muncul G 3 kali sehingga dalam 20 kali percobaam G muncul sebanyak 7 kali maka frekuensi relatif muncul G pada 20 percobaan adalah 7/20.
+        
+        </p>
+    <p style="font-family: 'times new roman'">Contoh Soal Peluang
+        Sebuah huruf dipilih secara acak dari huruf-huruf pada tulisan "JURAGAN". Tentukan peluang terpilihnya huruf A!
+        
+        Penyelesaian
+        Banyak kejadian yang dimaksud = 2 karena huruf A ada 2
+        Banyak kejadian yang mungkin = 7 karena jumlah huruf ada 7
+        Jadi P (huruf A) = 2/7</P>
+        <center><img src="../static/img/mp1.jpeg" alt="Peluang" width="500px">
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+    <P></P>
+    <center>
+        <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    </center>
+    
+    <p></p> 
+
+{% endblock %}
+
+
+
+

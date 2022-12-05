@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<!-- Contact -->
+<center>
+<section class="jumbotron text-center mt-3">
+  <img src="../static/img/Profil Mapa Class.png" alt="foto" width="250" 
+    class="rounded-circle img-thumbnail"/>
+</center>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<section id="about">
+    <div class="container">
+        <div class="row text-center mb-3">
+            <div class="row">
+               <h2>Welcome To Mapa Class</h2> 
+            </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+            <div class=>
+                <p>MapaClass merupakan sebuah website pembelajaran online matematika kelas X semester ganjil. </p>
+                <p>MapaClass dikembangkan untuk menjawab beberapa tantangan siswa dalam pembelajaran konvensional menjadi tanpa batas.</p>
+            </div>
+        </div>
+    </div>
+<p></p>
+<p></p>
+<p></p>
+<img src="../static/img/Footer.png" height="150px" width="1265px;">
+<!-- Akhir Contact -->
+
+  <!-- Projects -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,224C384,203,480,117,576,101.3C672,85,768,139,864,133.3C960,128,1056,64,1152,58.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+<section id="projects">
+    <div class="container">
+        <div class="row text-center mb-3">
+            <div class="col">
+                <h2>Kursus</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+           <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="../static/img/mbd2.png" class="card-img-top" alt="projects 1">
+                <div class="card-body">
+                  <p class="card-text">Barisan Aritmatika adalah bilangan dengan pola yang tetap berdasarkan operasi penjumlahan dan pengurangan. Sedangkan deret aritmetika adalah jumlah n suku pertama barisan aritmetika.</p>
+                </div>
+              </div>
+           </div>
+
+           <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="../static/img/me2.png" class="card-img-top" alt="projects 1">
+                <div class="card-body">
+                  <p class="card-text">Eksponen atau yang lebih sering kita dengar dengan sebutan pangkat adalah nilai yang menunjukkan derajat kepangkatan atau sebanyak berapa kali sebuah bilangan dikalikan dengan bilangan tersebut.</p>
+                </div>
+              </div>
+           </div>
+
+           <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="../static/img/mp2.png" class="card-img-top" alt="projects 1">
+                <div class="card-body">
+                  <p class="card-text">Peluang pada umumnya berarti kesempatan, namun pada matematika, peluang atau probabilitas adalah kemungkinan yang mungkin terjadi/muncul dari suatu peristiwa</p>
+                </div>
+              </div>
+           </div>
+
+           <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="../static/img/ms2.png" class="card-img-top" alt="projects 1">
+                <div class="card-body">
+                  <p class="card-text">Statistika adalah ilmu yang mempelajari semua hal tentang data, mulai pengumpulan, penyajian, analisis, sampai terbentuk suatu kesimpulan.</p>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,224C384,203,480,117,576,101.3C672,85,768,139,864,133.3C960,128,1056,64,1152,58.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+<!-- Akhir Projects -->
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <div class="row text-center mb-3">
+            <div class="col">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+           <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name">              
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="pesan" rows="3"></textarea>
+                  </div>
+                                
+                <button type="submit" class="btn btn-primary">Kirim</button>
+              </form>
+           </div> 
+        </div>
+    </div>
+<p>
+  <p></p>
+</p>
+    <img src="../static/img/Footer.png" height="150px" width="1265px;">
+<!-- Akhir Contact -->
+
+{% endblock %}
